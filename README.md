@@ -26,6 +26,7 @@ cp .env.example .env        # set the passwords
 docker compose up -d
 ```
 
+The `readings` table is created on first start (`init.sql`).
 Grafana is at http://localhost:3000 (user `admin`).
 
 **2. Flash the board**
