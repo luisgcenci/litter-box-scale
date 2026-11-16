@@ -1,0 +1,9 @@
+{
+  "folders": [
+    { "name": "firmware", "path": "firmware" },
+    { "name": "bridge", "path": "bridge" },
+    { "name": "backend", "path": "backend" },
+    { "name": "repo root", "path": "." }
+  ],
+  "settings": {}
+}

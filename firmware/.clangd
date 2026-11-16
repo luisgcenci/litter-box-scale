@@ -1,0 +1,11 @@
+# clangd config for PlatformIO (Uno and XIAO ESP32-C3).
+# The target chip comes from compile_commands.json via --query-driver.
+# Only remove gcc flags that clang doesn't understand.
+CompileFlags:
+  Remove:
+    - -flto
+    - -fno-fat-lto-objects
+    - -fstrict-volatile-bitfields
+    - -fno-tree-switch-conversion
+    - -march=*
+    - -mabi=*

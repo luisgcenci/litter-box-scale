@@ -1,0 +1,27 @@
+# macOS / editors
+.DS_Store
+**/.vscode/*
+!**/.vscode/extensions.json
+
+# PlatformIO / clangd
+firmware/.pio/
+firmware/.cache/
+firmware/compile_commands.json
+firmware/include/secrets.h
+
+# Python
+.venv/
+__pycache__/
+.ruff_cache/
+
+# Secrets
+.env
+!.env.example
+
+# Docker runtime data
+backend/mosquitto/data/
+backend/mosquitto/log/
+
+# FreeCAD backups
+*.FCBak
+*.FCStd1

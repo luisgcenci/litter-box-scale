@@ -1,0 +1,11 @@
+# clangd config for PlatformIO / AVR (Arduino Uno)
+# clangd runs on the Mac (arm64) and doesn't understand avr-g++ flags by default.
+# Tell it to parse the code as AVR so -mmcu works and Serial/registers are defined.
+CompileFlags:
+  Add:
+    - --target=avr
+    - -D__AVR_ATmega328P__
+    - -isystem/Users/luiscenciriberio/.platformio/packages/toolchain-atmelavr/avr/include
+  Remove:
+    - -flto
+    - -fno-fat-lto-objects
